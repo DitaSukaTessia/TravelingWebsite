@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore amazing destinations and unforgettable tour packages with Travelokal. Your adventure starts here!">
+    <meta name="keywords" content="travel, tourism, vacation, adventure, destinations, tour packages, explore, booking">
+    <title>Travelokal - Your Journey, Our Passion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1A237E',
+                        accent: '#FF7F50',  
+                        lightGray: '#F5F5F5', 
+                        darkText: '#333333', 
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'], // Set Inter as the default sans-serif font
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom CSS for smooth scrolling behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans text-darkText bg-lightGray">
+    <!-- Header Section - Sticky at the top, responsive for mobile and desktop -->
+    <header class="bg-white shadow-md fixed w-full z-50 py-4">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo - Link to home page with modern text styling -->
+            <a href="index.html" class="text-3xl font-extrabold text-primary tracking-tight">Travelokal</a>
+            <!-- Desktop Navigation - Hidden on small screens, shown on medium and up -->
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="index.html" class="text-darkText hover:text-accent transition duration-300 text-lg font-medium">Home</a></li>
+                <li><a href="destinations.html" class="text-darkText hover:text-accent transition duration-300 text-lg font-medium">Destinations</a></li>
+                <li><a href="tours.html" class="text-darkText hover:text-accent transition duration-300 text-lg font-medium">Tours</a></li>
+                <li><a href="gallery.html" class="text-darkText hover:text-accent transition duration-300 text-lg font-medium">Gallery</a></li>
+                <li><a href="booking.html" class="text-darkText hover:text-accent transition duration-300 text-lg font-medium">Booking</a></li>
+                <li><a href="about.html" class="text-darkText hover:text-accent transition duration-300 text-lg font-medium">About</a></li>
+                <li><a href="contact.html" class="text-darkText hover:text-accent transition duration-300 text-lg font-medium">Contact</a></li>
+            </ul>
+            <!-- Mobile Hamburger Menu Button - Only visible on small screens -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-darkText focus:outline-none p-2 rounded-md hover:bg-gray-100 transition duration-300" aria-label="Toggle mobile menu">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu - Hidden by default, toggled by JS -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white mt-4 py-4 shadow-lg border-t border-gray-100">
+            <ul class="flex flex-col items-center space-y-4">
+                <li><a href="index.html" class="block py-2 text-darkText hover:text-accent transition duration-300 text-lg font-medium">Home</a></li>
+                <li><a href="destinations.html" class="block py-2 text-darkText hover:text-accent transition duration-300 text-lg font-medium">Destinations</a></li>
+                <li><a href="tours.html" class="block py-2 text-darkText hover:text-accent transition duration-300 text-lg font-medium">Tours</a></li>
+                <li><a href="gallery.html" class="block py-2 text-darkText hover:text-accent transition duration-300 text-lg font-medium">Gallery</a></li>
+                <li><a href="booking.html" class="block py-2 text-darkText hover:text-accent transition duration-300 text-lg font-medium">Booking</a></li>
+                <li><a href="about.html" class="block py-2 text-darkText hover:text-accent transition duration-300 text-lg font-medium">About</a></li>
+                <li><a href="contact.html" class="block py-2 text-darkText hover:text-accent transition duration-300 text-lg font-medium">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content Area - Padding top to avoid content hidden by fixed header -->
+    <main class="pt-24 md:pt-28">
+        <!-- Hero Section - Full-width background image with tagline and CTA -->
+        <section class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+            <!-- Background image with overlay for better text readability -->
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/000000/FFFFFF?text=Epic+Travel+Experience');" aria-label="Scenic landscape background image for hero section">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+            <div class="relative z-10 text-white p-6 max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up">
+                    Discover Your Next Grand Adventure
+                </h1>
+                <p class="text-lg md:text-xl mb-8 opacity-90 animate-fade-in-up delay-200">
+                    From pristine beaches to majestic mountains, we craft journeys that inspire.
+                </p>
+                <a href="tours.html" class="inline-block bg-accent text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-90 transform hover:scale-105 transition duration-300 ease-in-out text-lg animate-fade-in-up delay-400" aria-label="Explore our amazing tours">
+                    Explore Our Tours
+                </a>
+            </div>
+        </section>
+
+        <!-- Featured Destinations Section - Example of content section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-primary mb-12">Popular Destinations</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Destination Card 1 -->
+                    <article class="bg-lightGray rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/9b59b6/FFFFFF?text=Paris" alt="Eiffel Tower in Paris" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-darkText mb-3">Paris, France</h3>
+                            <p class="text-gray-700 mb-4">The city of love, art, and exquisite cuisine. Explore its iconic landmarks and charming streets.</p>
+                            <a href="destinations.html#paris" class="inline-block bg-primary text-white py-2 px-5 rounded-full text-sm font-medium hover:bg-opacity-90 transition duration-300">Learn More</a>
+                        </div>
+                    </article>
+                    <!-- Destination Card 2 -->
+                    <article class="bg-lightGray rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/3498db/FFFFFF?text=Kyoto" alt="Traditional temple in Kyoto, Japan" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-darkText mb-3">Kyoto, Japan</h3>
+                            <p class="text-gray-700 mb-4">Experience ancient traditions, beautiful temples, and serene gardens in Japan's cultural heart.</p>
+                            <a href="destinations.html#kyoto" class="inline-block bg-primary text-white py-2 px-5 rounded-full text-sm font-medium hover:bg-opacity-90 transition duration-300">Learn More</a>
+                        </div>
+                    </article>
+                    <!-- Destination Card 3 -->
+                    <article class="bg-lightGray rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/2ecc71/FFFFFF?text=Rio" alt="Christ the Redeemer statue overlooking Rio de Janeiro" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-darkText mb-3">Rio de Janeiro, Brazil</h3>
+                            <p class="text-gray-700 mb-4">Vibrant city known for its breathtaking landscapes, lively samba, and iconic Christ the Redeemer.</p>
+                            <a href="destinations.html#rio" class="inline-block bg-primary text-white py-2 px-5 rounded-full text-sm font-medium hover:bg-opacity-90 transition duration-300">Learn More</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="destinations.html" class="inline-block bg-accent text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-90 transform hover:scale-105 transition duration-300 ease-in-out text-lg" aria-label="View all destinations">
+                        View All Destinations
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section - Encouraging booking -->
+        <section class="bg-primary text-white py-20 text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready for Your Next Journey?</h2>
+                <p class="text-xl md:text-2xl mb-8 opacity-90">Book your dream vacation today and create memories that last a lifetime.</p>
+                <a href="booking.html" class="inline-block bg-accent text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-90 transform hover:scale-105 transition duration-300 ease-in-out text-lg" aria-label="Go to booking page">
+                    Book Now
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section - Consistent across all pages -->
+    <footer class="bg-primary text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2025 Travelokal. All rights reserved.</p>
+            <!-- Social Media Links - Using FontAwesome for icons -->
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-white hover:text-accent transition duration-300 text-2xl" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white hover:text-accent transition duration-300 text-2xl" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white hover:text-accent transition duration-300 text-2xl" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white hover:text-accent transition duration-300 text-2xl" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FontAwesome for social media icons - Deferred loading for performance -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" defer></script>
+    <!-- Main JavaScript file - Deferred loading for performance -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
+  </html>

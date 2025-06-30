@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about Travelokal's story, mission, and the dedicated team behind your unforgettable travel experiences." />
+    <meta
+      name="keywords"
+      content="about us, company history, travel agency, mission statement, team members, travel experts, why choose us" />
+    <title>About Us - Travelokal</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1A237E",
+              accent: "#FF7F50",
+              lightGray: "#F5F5F5",
+              darkText: "#333333",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="font-sans text-darkText bg-lightGray">
+    <!-- Header Section - Consistent across all pages -->
+    <header class="bg-white shadow-md fixed w-full z-50 py-4">
+      <nav class="container mx-auto px-4 flex justify-between items-center">
+        <a
+          href="index.html"
+          class="text-3xl font-extrabold text-primary tracking-tight"
+          >Travelokal</a
+        >
+        <ul class="hidden md:flex space-x-8">
+          <li>
+            <a
+              href="index.html"
+              class="text-darkText hover:text-accent transition duration-300 text-lg font-medium"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="destinations.html"
+              class="text-darkText hover:text-accent transition duration-300 text-lg font-medium"
+              >Destinations</a
+            >
+          </li>
+          <li>
+            <a
+              href="tours.html"
+              class="text-darkText hover:text-accent transition duration-300 text-lg font-medium"
+              >Tours</a
+            >
+          </li>
+          <li>
+            <a
+              href="gallery.html"
+              class="text-darkText hover:text-accent transition duration-300 text-lg font-medium"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              href="booking.html"
+              class="text-darkText hover:text-accent transition duration-300 text-lg font-medium"
+              >Booking</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="text-accent transition duration-300 text-lg font-medium"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="text-darkText hover:text-accent transition duration-300 text-lg font-medium"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="text-darkText focus:outline-none p-2 rounded-md hover:bg-gray-100 transition duration-300"
+            aria-label="Toggle mobile menu">
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white mt-4 py-4 shadow-lg border-t border-gray-100">
+        <ul class="flex flex-col items-center space-y-4">
+          <li>
+            <a
+              href="index.html"
+              class="block py-2 text-darkText hover:text-accent transition duration-300 text-lg font-medium"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="destinations.html"
+              class="block py-2 text-darkText hover:text-accent transition duration-300 text-lg font-medium"
+              >Destinations</a
+            >
+          </li>
+          <li>
+            <a
+              href="tours.html"
+              class="block py-2 text-darkText hover:text-accent transition duration-300 text-lg font-medium"
+              >Tours</a
+            >
+          </li>
+          <li>
+            <a
+              href="gallery.html"
+              class="block py-2 text-darkText hover:text-accent transition duration-300 text-lg font-medium"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              href="booking.html"
+              class="block py-2 text-darkText hover:text-accent transition duration-300 text-lg font-medium"
+              >Booking</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="block py-2 text-darkText hover:text-accent transition duration-300 text-lg font-medium"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block py-2 text-darkText hover:text-accent transition duration-300 text-lg font-medium"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="pt-24 md:pt-28 pb-12">
+      <section class="container mx-auto px-4 py-8">
+        <h1
+          class="text-4xl md:text-5xl font-bold text-primary text-center mb-12">
+          About Travelokal
+        </h1>
+        <p class="text-center text-lg text-gray-700 mb-10 max-w-2xl mx-auto">
+          Discover our journey, our passion for travel, and the dedicated team
+          that makes your dreams a reality.
+        </p>
+
+        <!-- Company Story -->
+        <div class="bg-white p-8 rounded-xl shadow-lg mb-12">
+          <h2 class="text-3xl font-bold text-darkText mb-6 text-center">
+            Our Story
+          </h2>
+          <div class="prose max-w-full lg:prose-lg mx-auto text-gray-800">
+            <p class="mb-4">
+              Founded in 2025, Travelokal started with a simple vision: to make
+              the world more accessible and enjoyable for everyone. What began
+              as a small group of passionate travelers sharing their favorite
+              spots quickly grew into a comprehensive platform dedicated to
+              crafting seamless and memorable journeys. We believe that travel
+              is not just about visiting new places, but about discovering new
+              aspects of yourself and the world around you.
+            </p>
+            <p class="mb-4">
+              Over the years, we've helped thousands of adventurers explore
+              remote landscapes, immerse themselves in vibrant cultures, and
+              create unforgettable memories. Our commitment to excellence,
+              personalized service, and sustainable tourism practices has been
+              the cornerstone of our growth. We are constantly innovating to
+              provide the best travel experiences, ensuring every detail is
+              taken care of, from planning to returning home.
+            </p>
+            <p>
+              At Travelokal, your journey truly is our passion. We are excited
+              to be a part of your next grand adventure.
+            </p>
+          </div>
+        </div>
+
+        <!-- Our Mission -->
+        <div
+          class="bg-primary text-white p-8 rounded-xl shadow-lg mb-12 text-center">
+          <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
+          <p class="text-xl leading-relaxed max-w-3xl mx-auto">
+            To inspire and enable transformative travel experiences, connecting
+            people with the world's wonders while promoting responsible and
+            sustainable tourism for future generations.
+          </p>
+        </div>
+
+        <!-- Team Member Section -->
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <h2 class="text-3xl font-bold text-darkText mb-10 text-center">
+            Meet Our Team
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Team Member 1 -->
+            <div class="text-center bg-lightGray p-6 rounded-lg shadow-md">
+              <img
+                src="https://placehold.co/150x150/1A237E/FFFFFF?text=JD"
+                alt="Photo of Jane Doe, CEO"
+                class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-accent" />
+              <h3 class="text-xl font-semibold text-darkText mb-2">Jane Doe</h3>
+              <p class="text-primary font-medium mb-3">
+                Chief Executive Officer
+              </p>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Jane's vision and leadership have guided Travelokal since its
+                inception. Her extensive experience in the tourism industry and
+                passion for sustainable travel are at the heart of everything we
+                do.
+              </p>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="text-center bg-lightGray p-6 rounded-lg shadow-md">
+              <img
+                src="https://placehold.co/150x150/FF7F50/FFFFFF?text=MS"
+                alt="Photo of Mark Smith, Head of Operations"
+                class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-primary" />
+              <h3 class="text-xl font-semibold text-darkText mb-2">
+                Mark Smith
+              </h3>
+              <p class="text-primary font-medium mb-3">Head of Operations</p>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Mark ensures every trip runs smoothly. His meticulous planning
+                and logistical expertise guarantee a hassle-free experience for
+                all our travelers.
+              </p>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="text-center bg-lightGray p-6 rounded-lg shadow-md">
+              <img
+                src="https://placehold.co/150x150/1A237E/FFFFFF?text=LA"
+                alt="Photo of Lisa Anderson, Lead Travel Designer"
+                class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-accent" />
+              <h3 class="text-xl font-semibold text-darkText mb-2">
+                Lisa Anderson
+              </h3>
+              <p class="text-primary font-medium mb-3">Lead Travel Designer</p>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Lisa is our creative force, designing unique and personalized
+                itineraries. Her deep knowledge of destinations brings
+                extraordinary adventures to life.
+              </p>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="text-center bg-lightGray p-6 rounded-lg shadow-md">
+              <img
+                src="https://placehold.co/150x150/FF7F50/FFFFFF?text=DW"
+                alt="Photo of David Wilson, Customer Relations Manager"
+                class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-primary" />
+              <h3 class="text-xl font-semibold text-darkText mb-2">
+                David Wilson
+              </h3>
+              <p class="text-primary font-medium mb-3">
+                Customer Relations Manager
+              </p>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                David is dedicated to ensuring our customers have the best
+                possible experience, from initial inquiry to post-trip feedback.
+              </p>
+            </div>
+
+            <!-- Team Member 5 -->
+            <div class="text-center bg-lightGray p-6 rounded-lg shadow-md">
+              <img
+                src="https://placehold.co/150x150/1A237E/FFFFFF?text=SR"
+                alt="Photo of Sarah Roberts, Marketing Specialist"
+                class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-accent" />
+              <h3 class="text-xl font-semibold text-darkText mb-2">
+                Sarah Roberts
+              </h3>
+              <p class="text-primary font-medium mb-3">Marketing Specialist</p>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Sarah connects our adventures with curious travelers, sharing
+                the stories and magic of our destinations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section - Consistent across all pages -->
+    <footer class="bg-primary text-white py-8 mt-12">
+      <div class="container mx-auto px-4 text-center">
+        <p class="mb-4">&copy; 2025 Travelokal. All rights reserved.</p>
+        <div class="flex justify-center space-x-6">
+          <a
+            href="#"
+            class="text-white hover:text-accent transition duration-300 text-2xl"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="#"
+            class="text-white hover:text-accent transition duration-300 text-2xl"
+            aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="#"
+            class="text-white hover:text-accent transition duration-300 text-2xl"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="#"
+            class="text-white hover:text-accent transition duration-300 text-2xl"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FontAwesome for social media icons -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
+      defer></script>
+    <!-- Main JavaScript file -->
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
